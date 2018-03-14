@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    flex-direction: column;
+}
+
+.form {
+    text-align: center;
+    width: 33.3%;
+    margin: 0 auto;
+}
+.form input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.form textarea{
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+}
+
+.button {
+    background-color: #0e4e9a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+<div class="container">
+    <form class="form" method="POST" action="">
+        <h2>Eintrag hinzufügen</h2>
+        <label for="Date"><b>Date</b></label>
+        <input type="date" name="Date" value="<?= date('Y-m-d')?>"><br><br>
+
+        <label for="title"><b>Title</b></label>
+        <input type="text" placeholder="Title" name="Title" required>
+
+        <textarea name="Text" placeholder="Content" rows="15"></textarea>
+        <?php if(!empty($errorMessage)) : ?>
+            <div class="error"><?= $errorMessage ?></div>
+        <?php endif; ?>
+        <button class="button" type="submit" name="postEntry" value="postEntry">Post</button>
+    </form>
+</div>
