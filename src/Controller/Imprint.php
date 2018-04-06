@@ -13,7 +13,7 @@ use Check24Framework\ControllerInterface;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
 
-class Impressum implements ControllerInterface
+class Imprint implements ControllerInterface
 {
     public function action(Request $request)
     {

@@ -33,4 +33,6 @@
     border: none;
     cursor: pointer;
     width: 100%;
+    display: block;
+    text-decoration: none;
 }

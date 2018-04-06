@@ -2,7 +2,7 @@
     <form class="form" method="POST" action="">
         <h2>Eintrag hinzufügen</h2>
         <label for="Date"><b>Date</b></label>
-        <input type="date" name="Date" value="<?= date('Y-m-d')?>"><br><br>
+        <input type="text" name="Date" value="<?= date('Y-m-d H:i:s')?>" readonly><br><br>
 
         <label for="title"><b>Title</b></label>
         <input type="text" placeholder="Title" name="Title" required>

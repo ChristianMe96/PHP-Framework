@@ -1,22 +1,23 @@
 <?php
 
 namespace AddEntry;
-
+//umbenenen repository
+//entitys injekten
 
 use Check24Framework\Request;
+use Factory\Entry;
 
-class Engine
+class InsertToDB
 {
-
-
-    public function processBlogPost(Request $requestData){
+    public function processBlogPost(Request $requestData, \PDO $pdo){
         if (!empty($requestData->getFromPost('Text')) || !empty($requestData->getFromPost('Title')) || !empty($requestData->getFromPost('Date'))){
-            $mysql = new \mysqli('localhost', 'root', '', 'blog');
-            $date = $requestData->getFromPost('Date');
+            $date = date('Y-m-d H:i:s');
             $title = $requestData->getFromPost('Title');
             $content = $requestData->getFromPost('Text');
             $authorId = $_SESSION['userId'];
-            $query = $mysql->query("INSERT INTO entries (date,title,content,authorID) VALUES ('$date','$title','$content','$authorId')");
+
+            $entry = Entry::create();
+            $entry->addEntry($date, $title, $content, $authorId);
         }
     }
 }

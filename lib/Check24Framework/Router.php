@@ -19,7 +19,6 @@ class Router
         } else {
             throw new \Exception('');
         }
-
     }
 
 }

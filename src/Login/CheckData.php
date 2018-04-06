@@ -1,21 +1,22 @@
 <?php
 
-namespace LoginForm;
+namespace Login;
 
 
 use Check24Framework\Exeption\WrongLoginData;
 use Check24Framework\Request;
+use Factory\User;
 
-class Engine
+class CheckData
 {
     private $loginStatus = false;
 
-    public function validate(Request $request): bool {
-        $mysql = new \mysqli('localhost', 'root', '', 'blog');
+    public function validate(Request $request, \PDO $pdo): bool {
         $username = $request->getFromPost('username');
         $password = $request->getFromPost('password');
-        $query = $mysql->query("SELECT * FROM users WHERE username = '$username'");
-        $user = $query->fetch_assoc();
+
+        $userRepo = User::create();
+        $user = $userRepo->getUserWhereName($username);
 
         if ($user !== false && password_verify($password, $user['password'])) {
             $_SESSION['userId'] = $user['ID'];

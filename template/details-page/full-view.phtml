@@ -1,35 +1,39 @@
 <div class="blog-entry">
     <p class="date-title"><?= $entry['date'] ?> : <?= $entry['title'] ?></p>
     <p class="content"><?= $entry['content']?></p>
-    <p class="author">Nickname 1</p>
+    <p class="author"><?= $entry['author'] ?></p>
 
-    <div class="commentSection">
-        <p><u>1 Kommentar vorhanden :</u></p>
-        <div class="comment">
-            <p>1. <strong>Max</strong>(verlinkt auf die eingegebene URL) meint: (06.10.2006 um 12:34):
-            <p> Ich denke der Eintrag ist sehr gut, weiter so!</p>
+
+        <div class="commentSection">
+            <p><u><?= count($comments) ?> Kommentar vorhanden :</u></p>
+            <?php foreach ($comments as $i => $comment) : ?>
+            <div class="comment">
+                <p><?=$i +1?>. <strong><?= htmlentities($comment['user'], ENT_QUOTES)?></strong>(<a href="https://<?= htmlentities($comment['url'], ENT_QUOTES) ?>"><?= htmlentities($comment['url'], ENT_QUOTES) ?></a>) meint: (am <?= htmlentities($comment['date'], ENT_QUOTES)?>):
+                <p> <?= htmlentities($comment['comment'], ENT_QUOTES)?></p>
+            </div>
+            <?php endforeach; ?>
         </div>
-    </div>
+
 
     <p><u>Kommentar schreiben :</u></p>
-    <form  method="POST" action="" class="dummyFormComment">
+    <form  method="POST" action="/Add-Comment?id=<?= $id ?>" >
         <div class="form-item">
             <label for="name"><b>Name</b></label>
             <input type="text" name="name" required>
         </div>
         <div class="form-item">
             <label for="mail"><b>Mail (optional)</b></label>
-            <input type="password" name="mail">
-        </div>
-        <div class="form-item">
-            <label for="url"><b>URL (optional)</b></label>
             <input type="text" name="mail">
         </div>
         <div class="form-item">
-            <label for="comment"><b>Bemerkung</b></label>
-            <textarea cols="20"></textarea>
+            <label for="url"><b>URL (optional)</b></label>
+            <input type="text" name="url">
         </div>
-        <button type="submit" name="sendComment" id="sendComment">Absenden</button>
+        <div class="form-item">
+            <label for="comment"><b>Bemerkung</b></label>
+            <textarea cols="20" name="comment"></textarea>
+        </div>
+        <button type="submit" name="sendComment" id="sendComment" value="true">Absenden</button>
     </form>
 </div>
 

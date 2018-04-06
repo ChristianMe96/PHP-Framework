@@ -17,7 +17,6 @@ class Application
             include('../template/error/404.html');
             die();
         }
-
         $controller = new $controllerClass;
         $viewModel = $controller->action($request);
         $renderer = new Renderer();
