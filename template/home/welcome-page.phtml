@@ -1,13 +1,13 @@
 <div class="container">
     <?php foreach ($blogEntries as $i => $blogEntry) : ?>
         <div class="blog-entry">
-            <p class="date-title"><?= $blogEntry['date'] == date('Y-m-d') ? 'Heute : ' : $blogEntry['date']. ' : '?><a href="/Details-Page?id=<?= $blogEntry['ID'] ?>"><?= htmlentities($blogEntry['title'], ENT_QUOTES) ?></a></p>
+            <p class="date-title"><?= $blogEntry->getDate() == date('Y-m-d') ? 'Heute : ' : $blogEntry->getDate(). ' : '?><a href="/Details-Page?id=<?= $blogEntry->getID() ?>"><?= htmlentities($blogEntry->getTitle(), ENT_QUOTES) ?></a></p>
             <p class="content">
-                <?php if (strlen($blogEntry['content']) > 1000) { echo substr(htmlentities($blogEntry['content'], ENT_QUOTES),0,1000) ?>
-                <a href="/Details-Page?id=<?= $blogEntry['ID'] ?>">[...]</a>
-                <?php } else { echo  htmlentities($blogEntry['content'], ENT_QUOTES); }?>
+                <?php if (strlen($blogEntry->getContent()) > 1000) { echo substr(htmlentities($blogEntry->getContent(), ENT_QUOTES),0,1000) ?>
+                <a href="/Details-Page?id=<?= $blogEntry->getID() ?>">[...]</a>
+                <?php } else { echo  htmlentities($blogEntry->getContent(), ENT_QUOTES); }?>
             </p>
-            <p class="author">Autor: <?= $blogEntry['author']?><a href="/Details-Page?id=<?= $blogEntry['ID'] ?>"><?= $blogEntry['commentCount'] //ToDo Display author name and comment number ?> Comments</a></p>
+            <p class="author">Autor: <?= $blogEntry->getAuthor()?><a href="/Details-Page?id=<?= $blogEntry->getID() ?>"><?= $blogEntry->getCommentCount() //ToDo Display author name and comment number ?> Comments</a></p>
         </div>
     <?php endforeach; ?>
 

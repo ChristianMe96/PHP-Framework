@@ -4,32 +4,43 @@ namespace Controller;
 
 
 use Check24Framework\ControllerInterface;
+use Check24Framework\DiContainer;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
 use Factory\Comment;
 use Factory\Entry;
 
+/**
+ * Class DetailsPage
+ * @package Controller
+ */
 class DetailsPage implements ControllerInterface
 {
-    public function action(Request $request)
+    private $diContainer;
+
+    public function __construct(DiContainer $diContainer)
+    {
+        $this->diContainer = $diContainer;
+    }
+    /**
+     * @param Request $request
+     * @return ViewModel
+     */
+    public function action(Request $request): ViewModel
     {
         $id = $request->getFromQuery('id');
 
-        $entry = Entry::create();
+        $entry = $this->diContainer->get('Repository\Entry');
         $entryById = $entry->getEntryById($id);
 
-        $date = new \DateTime($entryById['date']);
-        $entryById['date'] = $date->format("d.m.Y H:i:s");
+        $date = new \DateTime($entryById->getDate());
+        $entryById->setDate($date->format("d.m.Y H:i:s"));
 
-        $comment = Comment::create();
-        $commentsByEntryId = $comment->getCommentsByEntryId($id);
+        $comments = $entryById->getComments();
 
-        if (!$commentsByEntryId) {
-            $commentsByEntryId = [];
-        }
         $viewModel = new ViewModel();
         $viewModel->setTemplate('../template/details-page/full-view.phtml');
-        $viewModel->setTemplateVariables(['entry' => $entryById , 'comments' => $commentsByEntryId, 'id' => $id]);
+        $viewModel->setTemplateVariables(['entry' => $entryById , 'comments' => $comments, 'id' => $id]);
         return $viewModel;
     }
 }

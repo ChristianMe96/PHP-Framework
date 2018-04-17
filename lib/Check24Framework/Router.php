@@ -14,8 +14,8 @@ class Router
             $requestUri = substr($requestUri, 0, strpos($requestUri, $requestQuery)-1);
         }
 
-        if (isset($routes[$requestUri])) {
-            return $routes[$requestUri];
+        if (isset($routes['routes'][$requestUri])) {
+            return $routes['routes'][$requestUri];
         } else {
             throw new \Exception('');
         }

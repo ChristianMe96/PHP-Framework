@@ -1,15 +1,15 @@
 <div class="blog-entry">
-    <p class="date-title"><?= $entry['date'] ?> : <?= $entry['title'] ?></p>
-    <p class="content"><?= $entry['content']?></p>
-    <p class="author"><?= $entry['author'] ?></p>
+    <p class="date-title"><?= $entry->getDate() ?> : <?= $entry->getTitle() ?></p>
+    <p class="content"><?= $entry->getContent() ?></p>
+    <p class="author"><?= $entry->getAuthor() ?></p>
 
 
         <div class="commentSection">
             <p><u><?= count($comments) ?> Kommentar vorhanden :</u></p>
             <?php foreach ($comments as $i => $comment) : ?>
             <div class="comment">
-                <p><?=$i +1?>. <strong><?= htmlentities($comment['user'], ENT_QUOTES)?></strong>(<a href="https://<?= htmlentities($comment['url'], ENT_QUOTES) ?>"><?= htmlentities($comment['url'], ENT_QUOTES) ?></a>) meint: (am <?= htmlentities($comment['date'], ENT_QUOTES)?>):
-                <p> <?= htmlentities($comment['comment'], ENT_QUOTES)?></p>
+                <p><?=$i +1?>. <strong><?= $comment->getUser() ?></strong>(<a href="https://<?= $comment->getUrl() ?>"><?= $comment->getMail() ?></a>) meint: (am <?= $comment->getDate() ?>):
+                <p> <?= $comment->getComment() ?></p>
             </div>
             <?php endforeach; ?>
         </div>

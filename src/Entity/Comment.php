@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: christian.meinhard
- * Date: 26.03.2018
- * Time: 13:26
- */
 
 namespace Entity;
 
@@ -14,9 +8,9 @@ class Comment
     /**
      * @var int
      */
-    private $id = 0;
+    private $ID = 0;
     private $user = '';
-    private $entryId = 0;
+    private $entryID = 0;
     private $comment = '';
     private $date = '';
     private $url = '';
@@ -25,18 +19,18 @@ class Comment
     /**
      * @return int
      */
-    public function getId(): int
+    public function getID(): int
     {
-        return $this->id;
+        return $this->ID;
     }
 
     /**
-     * @param int $id
+     * @param int $ID
      * @return Comment
      */
-    public function setId(int $id): Comment
+    public function setID(int $ID): Comment
     {
-        $this->id = $id;
+        $this->ID = $ID;
         return $this;
     }
 
@@ -61,18 +55,18 @@ class Comment
     /**
      * @return int
      */
-    public function getEntryId(): int
+    public function getEntryID(): int
     {
-        return $this->entryId;
+        return $this->entryID;
     }
 
     /**
-     * @param int $entryId
+     * @param int $entryID
      * @return Comment
      */
-    public function setEntryId(int $entryId): Comment
+    public function setEntryID(int $entryID): Comment
     {
-        $this->entryId = $entryId;
+        $this->entryID = $entryID;
         return $this;
     }
 

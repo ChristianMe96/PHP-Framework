@@ -2,9 +2,15 @@
 
 namespace Repository;
 
-
+/**
+ * Class Comment
+ * @package Repository
+ */
 class Comment
 {
+    /**
+     * @var
+     */
     private $pdo;
     private $commentsByEntryId;
 
@@ -13,15 +19,28 @@ class Comment
         $this->pdo = $pdo;
     }
 
-    public function getCommentsByEntryId($id){
+    /**
+     * @param $id
+     * @return array
+     */
+    public function getCommentsByEntryId($id): array{
         $stmtComment = $this->pdo->prepare("SELECT * FROM comments WHERE entryID = :id");
         $stmtComment->bindParam(':id', $id);
         $stmtComment->execute();
 
-        $this->commentsByEntryId = $stmtComment->fetchAll();
+        $this->commentsByEntryId = $stmtComment->fetchAll(\PDO::FETCH_CLASS, '\Entity\Comment');
+
         return $this->commentsByEntryId;
     }
 
+    /**
+     * @param $name
+     * @param $id
+     * @param $comment
+     * @param $date
+     * @param $url
+     * @param $mail
+     */
     public function addComment($name, $id, $comment, $date, $url, $mail): void{
         $stmt = $this->pdo->prepare("INSERT INTO comments (user,entryID,comment,date,url,mail) VALUES (:name , :id , :comment , :date , :url , :mail )");
         $stmt->bindParam(':name', $name);

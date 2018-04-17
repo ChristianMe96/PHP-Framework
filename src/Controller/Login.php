@@ -4,19 +4,35 @@ namespace Controller;
 
 
 use Check24Framework\ControllerInterface;
+use Check24Framework\DiContainer;
 use Check24Framework\Exeption\WrongLoginData;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
 use Login\CheckData;
 
+/**
+ * Class Login
+ * @package Controller
+ */
 class Login implements ControllerInterface
 {
-    public function action(Request $request)
+    private $diContainer;
+
+    public function __construct(DiContainer $diContainer)
+    {
+        $this->diContainer = $diContainer;
+    }
+
+    /**
+     * @param Request $request
+     * @return ViewModel
+     */
+    public function action(Request $request): ViewModel
     {
 
         if($request->getFromPost('login')){
             try {
-                $loginEngine = new CheckData();
+                $loginEngine = $this->diContainer->get('Login\CheckData');
                 $_SESSION['validity'] = $loginEngine->validate($request);
                 header('Location: /',TRUE, 301);
                 die();
