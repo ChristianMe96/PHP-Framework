@@ -65,7 +65,7 @@
           <file leaf-file-name="AddComment.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Controller/AddComment.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
+                <state relative-caret-position="100">
                   <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
                   <folding>
                     <element signature="e#31#72#0#PHP" expanded="true" />
@@ -337,8 +337,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-87" />
-    <option name="y" value="-21" />
+    <option name="x" value="1498" />
+    <option name="y" value="-131" />
     <option name="width" value="1934" />
     <option name="height" value="992" />
   </component>
@@ -567,12 +567,12 @@
       <workItem from="1522996511759" duration="10668000" />
       <workItem from="1523257366538" duration="33073000" />
       <workItem from="1523859644592" duration="20627000" />
-      <workItem from="1523947622391" duration="13156000" />
+      <workItem from="1523947622391" duration="13249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309894000" />
+    <option name="totallyTimeSpent" value="309987000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -584,7 +584,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-118" width="1936" height="1176" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15245202" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32906404" />
@@ -592,10 +592,10 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32934132" />
       <window_info anchor="right" id="Database" order="0" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32849163" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3280788" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.66600984" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -1055,7 +1055,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AddComment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="100">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#31#72#0#PHP" expanded="true" />
