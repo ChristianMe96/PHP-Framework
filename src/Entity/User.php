@@ -10,7 +10,7 @@ class User
      */
     private $username = '';
     private $password = '';
-    private $id = 0;
+    private $ID = 0;
 
     /**
      * @return string
@@ -33,18 +33,18 @@ class User
     /**
      * @return int
      */
-    public function getId(): int
+    public function getID(): int
     {
-        return $this->id;
+        return $this->ID;
     }
 
     /**
-     * @param int $id
+     * @param int $ID
      * @return User
      */
-    public function setId(int $id): User
+    public function setID(int $ID): User
     {
-        $this->id = $id;
+        $this->ID = $ID;
         return $this;
     }
 

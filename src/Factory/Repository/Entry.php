@@ -1,6 +1,6 @@
 <?php
 
-namespace Factory;
+namespace Factory\Repository;
 
 use Check24Framework\DiContainer;
 use Check24Framework\FactoryInterface;
@@ -18,7 +18,7 @@ class Entry implements FactoryInterface
      */
     public static function create(string $className, DiContainer $diContainer): \Repository\Entry
     {
-       return new $className($diContainer->get('PDO'));
+       return new $className($diContainer->get(\PDO::class));
     }
 }
 

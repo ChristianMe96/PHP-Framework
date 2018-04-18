@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: christian.meinhard
- * Date: 06.04.2018
- * Time: 10:50
- */
 
-namespace Factory;
+namespace Factory\Repository;
 
 
 use Check24Framework\DiContainer;
@@ -24,6 +18,6 @@ class Comment implements FactoryInterface
      */
     public static function create(string $className, DiContainer $diContainer): \Repository\Comment
     {
-        return new \Repository\Comment($diContainer->get('PDO'));
+        return new \Repository\Comment($diContainer->get(\PDO::class));
     }
 }

@@ -1,21 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: christian.meinhard
- * Date: 17.04.2018
- * Time: 09:37
- */
 
-namespace Factory;
+namespace Factory\Controller;
 
 
 use Check24Framework\DiContainer;
 use Check24Framework\FactoryInterface;
+use Repository\Entry;
 
-class Controller
+class DetailsPage implements FactoryInterface
 {
     public static function create(string $className, DiContainer $diContainer)
     {
-        return new $className($diContainer);
+        return new $className($diContainer->get(Entry::class));
     }
 }

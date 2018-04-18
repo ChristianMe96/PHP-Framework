@@ -27,17 +27,15 @@ class Entry
     }
 
     /**
-     * @param $date
-     * @param $title
-     * @param $content
-     * @param $authorId
+     * @param int $authorId
+     * @param \Entity\Entry $entry
      */
-    public function addEntry($date, $title, $content, $authorId): void{
+    public function addEntry(int $authorId, \Entity\Entry $entry): void{
         $stmt = $this->pdo->prepare("INSERT INTO entries (date,title,content,authorID) VALUES (:date , :title , :content , :authorId)");
-        $stmt->bindParam(':date', $date);
-        $stmt->bindParam(':title', $title);
-        $stmt->bindParam(':content', $content);
-        $stmt->bindParam(':authorId', $authorId);
+        $stmt->bindValue(':date', $entry->getDate());
+        $stmt->bindValue(':title', $entry->getTitle());
+        $stmt->bindValue(':content', $entry->getContent());
+        $stmt->bindValue(':authorId', $authorId);
         $stmt->execute();
     }
 
@@ -60,34 +58,7 @@ class Entry
         $entries->bindParam(':limit', $limit, \PDO::PARAM_INT);
         $entries->execute();
 
-        $this->entryData = $entries->fetchAll(\PDO::FETCH_CLASS, '\Entity\Entry');
-
-        /*
-        $IDs = [];
-        foreach ($this->entryData as $data){
-            array_push($IDs, $data->getID());
-        }
-        #var_dump($IDs);
-        $stmtComment = $this->pdo->prepare("SELECT entries.ID, comments.* FROM `entries` LEFT JOIN comments ON ( entries.ID = comments.entryID) WHERE entryID = 27 OR entryID = 26 OR entryID = 25");
-
-        $stmtComment->bindParam(':entryOne', $IDs[0]);
-        $stmtComment->bindParam(':entryTwo', $IDs[1]);
-        $stmtComment->bindParam(':entryThree', $IDs[2]);
-        $stmtComment->execute();
-
-        $comments = $stmtComment->fetchAll(\PDO::FETCH_CLASS, '\Entity\Comment');
-
-
-        $commentsForEntry = [];
-        foreach ($this->entryData as $i => $entry){
-            foreach ($comments as $j => $comment){
-                if ($entry->getID() === $comment->getEntryID()){
-                    array_push($commentsForEntry, $comment);
-                }
-            }
-
-        }
-        */
+        $this->entryData = $entries->fetchAll(\PDO::FETCH_CLASS, \Entity\Entry::class);
 
         return $this->entryData;
     }

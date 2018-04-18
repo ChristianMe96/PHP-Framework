@@ -22,11 +22,11 @@ class User
      * @param $username
      * @return mixed
      */
-    public function getUserWhereName($username){
+    public function getUserWhereName($username) {
         $stmt = $this->pdo->prepare("SELECT * FROM users WHERE username = :username");
         $stmt->bindParam(':username', $username);
         $stmt->execute();
-        $this->userWhereName = $stmt->fetch();
+        $this->userWhereName = $stmt->fetchObject(\Entity\User::class);
         return $this->userWhereName;
     }
 }

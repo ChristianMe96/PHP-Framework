@@ -4,9 +4,8 @@ namespace Controller;
 
 
 use Check24Framework\ControllerInterface;
-use Check24Framework\DiContainer;
 use Check24Framework\Request;
-use Factory\Comment;
+use Repository\Comment;
 
 /**
  * Class AddComment
@@ -15,11 +14,11 @@ use Factory\Comment;
 
 class AddComment implements ControllerInterface
 {
-    private $diContainer;
+    private $commentRepo;
 
-    public function __construct(DiContainer $diContainer)
+    public function __construct(Comment $commentRepo)
     {
-        $this->diContainer = $diContainer;
+        $this->commentRepo = $commentRepo;
     }
 
     /**
@@ -28,14 +27,15 @@ class AddComment implements ControllerInterface
     public function action(Request $request): void
     {
         $id = $request->getFromQuery('id');
-        $name = $request->getFromPost('name');
-        $mail = $request->getFromPost('mail');
-        $url = $request->getFromPost('url');
-        $text = $request->getFromPost('comment');
-        $date = date('Y-m-d H:i:s');
 
-        $comment = $this->diContainer->get('Repository\Comment');
-        $comment->addComment($name, $id, $text, $date, $url, $mail);
+        $newComment = new \Entity\Comment();
+        $newComment->setUser($request->getFromPost('name'));
+        $newComment->setMail($request->getFromPost('mail'));
+        $newComment->setUrl($request->getFromPost('url'));
+        $newComment->setComment($request->getFromPost('comment'));
+        $newComment->setDate(date('Y-m-d H:i:s'));
+
+        $this->commentRepo->addComment($id, $newComment);
 
         header('Location: /Details-Page?id='.$id, TRUE , 301);
         die();

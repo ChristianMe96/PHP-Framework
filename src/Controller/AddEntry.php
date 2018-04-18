@@ -3,11 +3,10 @@
 namespace Controller;
 
 
-use AddEntry\InsertToDB;
 use Check24Framework\ControllerInterface;
-use Check24Framework\DiContainer;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
+use Repository\Entry;
 
 
 /**
@@ -16,11 +15,14 @@ use Check24Framework\ViewModel;
  */
 class AddEntry implements ControllerInterface
 {
-    private $diContainer;
+    /**
+     * @var Entry
+     */
+    private $entryRepo;
 
-    public function __construct(DiContainer $diContainer)
+    public function __construct(Entry $entryRepo)
     {
-        $this->diContainer = $diContainer;
+        $this->entryRepo = $entryRepo;
     }
     /**
      * @param Request $request
@@ -33,8 +35,13 @@ class AddEntry implements ControllerInterface
 
         if ($request->getFromPost('postEntry')){
             try {
-                $addEntryEngine = $this->diContainer->get('AddEntry\InsertToDB');
-                $addEntryEngine->processBlogPost($request);
+                $newEntry = new \Entity\Entry();
+                $newEntry->setDate(date('Y-m-d H:i:s'));
+                $newEntry->setTitle($request->getFromPost('Title'));
+                $newEntry->setContent($request->getFromPost('Text'));
+                $authorId = $_SESSION['userId'];
+                $this->entryRepo->addEntry($authorId, $newEntry);
+                // todo: service for redirects
                 header('Location: /', TRUE , 301);
                 die();
             } catch (\Exception $e){

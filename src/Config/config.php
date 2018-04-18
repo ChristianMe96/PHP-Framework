@@ -3,29 +3,24 @@
 
 return [
     'routes' => [
-    '/' => \Controller\Home::class,
-    '/Login-Form' => \Controller\Login::class,
-    '/Add-Entry' => \Controller\AddEntry::class,
-    '/Impressum' => \Controller\Imprint::class,
-    '/Details-Page' => \Controller\DetailsPage::class,
-    '/Add-Comment' => \Controller\AddComment::class
+        '/' => \Controller\Home::class,
+        '/Login-Form' => \Controller\Login::class,
+        '/Add-Entry' => \Controller\AddEntry::class,
+        '/Impressum' => \Controller\Imprint::class,
+        '/Details-Page' => \Controller\DetailsPage::class,
+        '/Add-Comment' => \Controller\AddComment::class
     ],
     'factories' => [
-        // todo: framework und projekt configs voneinander trennen
-        \Repository\Comment::class => \Factory\Comment::class,
-        \Repository\User::class => \Factory\User::class,
-        \Repository\Entry::class => \Factory\Entry::class,
+        \Repository\Comment::class => \Factory\Repository\Comment::class,
+        \Repository\User::class => \Factory\Repository\User::class,
+        \Repository\Entry::class => \Factory\Repository\Entry::class,
         \PDO::class => \Factory\Pdo::class,
-        Controller\AddComment::class => \Factory\Controller::class,
-        \Controller\AddEntry::class => \Factory\Controller::class,
-        \Controller\DetailsPage::class => \Factory\Controller::class,
-        \Controller\Home::class => \Factory\Controller::class,
-        \Controller\Imprint::class => \Factory\Controller::class,
-        \Controller\Login::class => \Factory\Controller::class,
-        \Login\CheckData::class => \Factory\Controller::class,
-        \AddEntry\InsertToDB::class => \Factory\Controller::class
-
-        // todo: tbd
+        \Controller\AddComment::class => \Factory\Controller\AddComment::class,
+        \Controller\AddEntry::class => \Factory\Controller\AddEntry::class,
+        \Controller\DetailsPage::class => \Factory\Controller\DetailsPage::class,
+        \Controller\Home::class => \Factory\Controller\Home::class,
+        \Controller\Imprint::class => \Check24Framework\Factory\Invokable::class,
+        \Controller\Login::class => \Factory\Controller\Login::class,
+        \Service\LoginValidate::class => \Factory\Controller\CheckData::class,
     ],
 ];
-// todo config erweitern für di-configuration

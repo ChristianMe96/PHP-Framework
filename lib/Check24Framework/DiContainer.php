@@ -5,11 +5,11 @@ namespace Check24Framework;
 class DiContainer
 {
     private $instances = [];
-    private $config = [];
+    private $factoryConfig = [];
 
     public function __construct(array $config)
     {
-        $this->config = $config;
+        $this->factoryConfig = $config['factories'];
     }
 
     public function get($className)
@@ -22,8 +22,7 @@ class DiContainer
     }
 
     private function createInstance($className) {
-        // todo: erstellen, speichern und zurückgeben
-        $this->instances[$className] = $this->config['factories'][$className]::create($className, $this);
+        $this->instances[$className] = $this->factoryConfig[$className]::create($className, $this);
         return $this->instances[$className];
     }
 }

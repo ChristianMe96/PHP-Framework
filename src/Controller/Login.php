@@ -4,11 +4,9 @@ namespace Controller;
 
 
 use Check24Framework\ControllerInterface;
-use Check24Framework\DiContainer;
-use Check24Framework\Exeption\WrongLoginData;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
-use Login\CheckData;
+use Service\LoginValidate;
 
 /**
  * Class Login
@@ -16,11 +14,11 @@ use Login\CheckData;
  */
 class Login implements ControllerInterface
 {
-    private $diContainer;
+    private $checkData;
 
-    public function __construct(DiContainer $diContainer)
+    public function __construct(LoginValidate $checkData)
     {
-        $this->diContainer = $diContainer;
+        $this->checkData = $checkData;
     }
 
     /**
@@ -31,14 +29,14 @@ class Login implements ControllerInterface
     {
 
         if($request->getFromPost('login')){
-            try {
-                $loginEngine = $this->diContainer->get('Login\CheckData');
-                $_SESSION['validity'] = $loginEngine->validate($request);
+            $username = $request->getFromPost('username');
+            $password = $request->getFromPost('password');
+            $_SESSION['validity'] = $this->checkData->validate($username, $password);
+            if ($_SESSION['validity']){
                 header('Location: /',TRUE, 301);
                 die();
-            } catch (WrongLoginData $e){
-                $errorMessage =  $e->getMessage();
             }
+            $errorMessage = 'Wrong Username or Password please try again!';
         }
         $viewModel = new ViewModel();
         $viewModel->setTemplate('../template/login/form.phtml');

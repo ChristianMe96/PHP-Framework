@@ -7,8 +7,8 @@ use Check24Framework\ControllerInterface;
 use Check24Framework\DiContainer;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
-use Factory\Comment;
-use Factory\Entry;
+use Repository\Entry;
+
 
 /**
  * Class DetailsPage
@@ -16,11 +16,11 @@ use Factory\Entry;
  */
 class DetailsPage implements ControllerInterface
 {
-    private $diContainer;
+    private $entryRepo;
 
-    public function __construct(DiContainer $diContainer)
+    public function __construct(Entry $entryRepo)
     {
-        $this->diContainer = $diContainer;
+        $this->entryRepo = $entryRepo;
     }
     /**
      * @param Request $request
@@ -30,8 +30,7 @@ class DetailsPage implements ControllerInterface
     {
         $id = $request->getFromQuery('id');
 
-        $entry = $this->diContainer->get('Repository\Entry');
-        $entryById = $entry->getEntryById($id);
+        $entryById = $this->entryRepo->getEntryById($id);
 
         $date = new \DateTime($entryById->getDate());
         $entryById->setDate($date->format("d.m.Y H:i:s"));

@@ -7,7 +7,7 @@ use Check24Framework\ControllerInterface;
 use Check24Framework\DiContainer;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
-use Factory\Entry;
+use Repository\Entry;
 
 /**
  * Class Home
@@ -15,11 +15,11 @@ use Factory\Entry;
  */
 class Home implements ControllerInterface
 {
-    private $diContainer;
+    private $entryRepo;
 
-    public function __construct(DiContainer $diContainer)
+    public function __construct(Entry $entryRepo)
     {
-        $this->diContainer = $diContainer;
+        $this->entryRepo = $entryRepo;
     }
 
     /**
@@ -33,9 +33,9 @@ class Home implements ControllerInterface
         $nextPage = $currentPage + 1;
         $limit = $currentPage * 3;
 
-        $factoryEntry = $this->diContainer->get('Repository\Entry');
-        $blogEntriesDB = $factoryEntry->getEntry($limit);
-        $rowCount = $factoryEntry->getRowCount();
+
+        $blogEntriesDB = $this->entryRepo->getEntry($limit);
+        $rowCount = $this->entryRepo->getRowCount();
 
 
         if ($request->getFromQuery('Logout')) {

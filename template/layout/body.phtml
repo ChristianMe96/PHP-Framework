@@ -15,6 +15,7 @@
 
     <div class="navbar">
         <a href="/">Startseite</a>
+        <!-- ändern ohne session  -->
         <?php if(!isset($_SESSION['validity'])) : ?>
         <a href="/Login-Form">Login</a>
         <?php else : ?>

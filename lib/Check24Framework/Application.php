@@ -4,24 +4,16 @@ namespace Check24Framework;
 
 class Application
 {
-    private $config = [];
-
-    public function __construct(array $config)
-    {
-        $this->config = $config;
-    }
-
-
-    public function init()
+    public function init($config)
     {
         $frameworkConfig = include('config.php');
-        $this->config['factories']= array_merge($this->config['factories'],$frameworkConfig['factories']);
-        $diContainer = new DiContainer($this->config);
+        $mergedConfig = array_merge_recursive($frameworkConfig, $config);
+        $diContainer = new DiContainer($mergedConfig);
 
         $request = new Request($_GET, $_POST, $_FILES);
         $router = $diContainer->get('Check24Framework\Router');
         try {
-            $controllerClass = $router->route($this->config, $_SERVER);
+            $controllerClass = $router->route($mergedConfig, $_SERVER);
         } catch (\Exception $exception) {
             header("HTTP/1.0 404 Not Found");
             include('../template/error/404.html');

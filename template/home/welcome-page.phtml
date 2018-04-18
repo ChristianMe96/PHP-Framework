@@ -7,7 +7,7 @@
                 <a href="/Details-Page?id=<?= $blogEntry->getID() ?>">[...]</a>
                 <?php } else { echo  htmlentities($blogEntry->getContent(), ENT_QUOTES); }?>
             </p>
-            <p class="author">Autor: <?= $blogEntry->getAuthor()?><a href="/Details-Page?id=<?= $blogEntry->getID() ?>"><?= $blogEntry->getCommentCount() //ToDo Display author name and comment number ?> Comments</a></p>
+            <p class="author">Autor: <?= $blogEntry->getAuthor()?><a href="/Details-Page?id=<?= $blogEntry->getID() ?>"><?= $blogEntry->getCommentCount()?> Comments</a></p>
         </div>
     <?php endforeach; ?>
 
