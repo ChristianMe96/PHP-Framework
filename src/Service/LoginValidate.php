@@ -26,13 +26,18 @@ class LoginValidate
      * @param string $password
      * @return bool
      */
-    public function validate(string $username,string $password): bool {
+    public function validate(string $username,string $password): array {
 
         $user = $this->userRepo->getUserWhereName($username);
         if ($user !== false && password_verify($password, $user->getPassword())) {
-            $_SESSION['userId'] = $user->getID();
-            return true;
+            return [
+                'validity' => true,
+                'ID' => $user->getID()
+            ];
         }
-        return false;
+        return [
+            'validity' => false,
+            'ID' => null
+        ];
     }
 }

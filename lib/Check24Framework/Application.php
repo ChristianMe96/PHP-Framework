@@ -15,9 +15,7 @@ class Application
         try {
             $controllerClass = $router->route($mergedConfig, $_SERVER);
         } catch (\Exception $exception) {
-            header("HTTP/1.0 404 Not Found");
-            include('../template/error/404.html');
-            die();
+            Redirect::to(404);
         }
         $controller = $diContainer->get($controllerClass);
         $viewModel = $controller->action($request);

@@ -4,6 +4,7 @@ namespace Controller;
 
 
 use Check24Framework\ControllerInterface;
+use Check24Framework\Redirect;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
 use Service\LoginValidate;
@@ -31,10 +32,11 @@ class Login implements ControllerInterface
         if($request->getFromPost('login')){
             $username = $request->getFromPost('username');
             $password = $request->getFromPost('password');
-            $_SESSION['validity'] = $this->checkData->validate($username, $password);
+            $idAndValidity = $this->checkData->validate($username, $password);
+            $_SESSION['validity'] = $idAndValidity['validity'];
+            $_SESSION['userId'] = $idAndValidity['ID'];
             if ($_SESSION['validity']){
-                header('Location: /',TRUE, 301);
-                die();
+                Redirect::to('/');
             }
             $errorMessage = 'Wrong Username or Password please try again!';
         }
