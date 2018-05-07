@@ -9,8 +9,7 @@
 namespace Controller;
 
 
-use Check24Framework\ControllerInterface;
-use Check24Framework\DiContainer;
+use Check24Framework\AbstractController;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
 
@@ -18,7 +17,7 @@ use Check24Framework\ViewModel;
  * Class Imprint
  * @package Controller
  */
-class Imprint implements ControllerInterface
+class Imprint extends AbstractController
 {
     /**
      * @param Request $request

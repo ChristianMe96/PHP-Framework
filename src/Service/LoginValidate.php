@@ -24,7 +24,7 @@ class LoginValidate
     /**
      * @param string $username
      * @param string $password
-     * @return bool
+     * @return array
      */
     public function validate(string $username,string $password): array {
 

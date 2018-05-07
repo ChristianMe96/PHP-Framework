@@ -21,6 +21,15 @@ return [
         \Controller\Home::class => \Factory\Controller\Home::class,
         \Controller\Imprint::class => \Check24Framework\Factory\Invokable::class,
         \Controller\Login::class => \Factory\Controller\Login::class,
-        \Service\LoginValidate::class => \Factory\Controller\CheckData::class,
+        \Service\LoginValidate::class => \Factory\Controller\LoginValidate::class,
     ],
+    'events' => [
+        \Check24Framework\Event::PRERENDER => [
+            \EventListener\LoginStatus::class
+        ],
+        \Check24Framework\Event::POSTRENDER => [
+
+        ]
+
+    ]
 ];

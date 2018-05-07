@@ -3,8 +3,7 @@
 namespace Controller;
 
 
-use Check24Framework\ControllerInterface;
-use Check24Framework\DiContainer;
+use Check24Framework\AbstractController;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
 use Repository\Entry;
@@ -14,7 +13,7 @@ use Repository\Entry;
  * Class DetailsPage
  * @package Controller
  */
-class DetailsPage implements ControllerInterface
+class DetailsPage extends AbstractController
 {
     private $entryRepo;
 

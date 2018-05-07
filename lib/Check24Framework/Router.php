@@ -3,6 +3,8 @@
 namespace Check24Framework;
 
 
+use Check24Framework\Exeption\RouteNotFound;
+
 class Router
 {
     public function route(array $routes, array $server): string
@@ -17,7 +19,7 @@ class Router
         if (isset($routes['routes'][$requestUri])) {
             return $routes['routes'][$requestUri];
         } else {
-            throw new \Exception('');
+            throw new RouteNotFound('');
         }
     }
 

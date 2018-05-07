@@ -3,7 +3,7 @@
 namespace Controller;
 
 
-use Check24Framework\ControllerInterface;
+use Check24Framework\AbstractController;
 use Check24Framework\Request;
 use Repository\Comment;
 
@@ -12,7 +12,7 @@ use Repository\Comment;
  * @package Controller
  */
 
-class AddComment implements ControllerInterface
+class AddComment extends AbstractController
 {
     private $commentRepo;
 
@@ -37,7 +37,6 @@ class AddComment implements ControllerInterface
 
         $this->commentRepo->addComment($id, $newComment);
 
-        header('Location: /Details-Page?id='.$id, TRUE , 301);
-        die();
+        $this->redirectToRoute('/Details-Page?id='.$id);
     }
 }

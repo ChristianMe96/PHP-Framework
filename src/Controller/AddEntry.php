@@ -3,6 +3,7 @@
 namespace Controller;
 
 
+use Check24Framework\AbstractController;
 use Check24Framework\ControllerInterface;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
@@ -13,7 +14,7 @@ use Repository\Entry;
  * Class AddEntry
  * @package Controller
  */
-class AddEntry implements ControllerInterface
+class AddEntry extends AbstractController
 {
     /**
      * @var Entry
@@ -41,9 +42,7 @@ class AddEntry implements ControllerInterface
                 $newEntry->setContent($request->getFromPost('Text'));
                 $authorId = $_SESSION['userId'];
                 $this->entryRepo->addEntry($authorId, $newEntry);
-                // todo: service for redirects
-                header('Location: /', TRUE , 301);
-                die();
+                $this->redirectToRoute('/');
             } catch (\Exception $e){
                 $errorMessage = $e->getMessage();
             }

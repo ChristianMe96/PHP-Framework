@@ -8,6 +8,39 @@ class ViewModel
 
     private $currentPath = null;
     private $TemplateVariables = [];
+    private $layoutVariables = [];
+
+    /**
+     * @return null
+     */
+    public function getCurrentPath()
+    {
+        return $this->currentPath;
+    }
+
+    /**
+     * @param null $currentPath
+     */
+    public function setCurrentPath($currentPath): void
+    {
+        $this->currentPath = $currentPath;
+    }
+
+    /**
+     * @return array
+     */
+    public function getLayoutVariables(): array
+    {
+        return $this->layoutVariables;
+    }
+
+    /**
+     * @param array $layoutVariables
+     */
+    public function setLayoutVariables(array $layoutVariables): void
+    {
+        $this->layoutVariables = $layoutVariables;
+    }
 
     public function setTemplate($path) : void
     {

@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b46ebfb-af07-4053-982d-6198a8e9ab16" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Check24Framework/Redirect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Check24Framework/AbstractController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Check24Framework/AbstractController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Check24Framework/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Check24Framework/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Check24Framework/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Check24Framework/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Check24Framework/Exeption/RouteNotFound.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Check24Framework/Exeption/RouteNotFound.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Check24Framework/Renderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Check24Framework/Renderer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Check24Framework/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Check24Framework/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Check24Framework/ViewModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Check24Framework/ViewModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Check24Framework/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Check24Framework/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AddComment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AddComment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AddEntry.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AddEntry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DetailsPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DetailsPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Imprint.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Imprint.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventListener/LoginStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventListener/LoginStatus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/Controller/LoginValidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory/Controller/LoginValidate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Service/LoginValidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/LoginValidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/layout/body.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/template/layout/body.phtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,120 +46,50 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5091743">
+    <splitter split-orientation="horizontal" split-proportion="0.23689727">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="AddComment.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Controller/AddComment.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="517">
-                  <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#31#72#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Comment.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Entity/Comment.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/config.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Home.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Controller/Home.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="188">
-                  <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-                  <folding>
-                    <element signature="e#31#72#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="508">
+                  <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="AddEntry.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Controller/AddEntry.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="327">
-                  <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#31#72#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="680">
+                  <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Redirect.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Redirect.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Controller/Login.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#31#72#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Router.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Application.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="404.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/template/error/404.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="45" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Renderer.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Renderer.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Renderer.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+                <state relative-caret-position="272">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FactoryInterface.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/FactoryInterface.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AbstractController.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/AbstractController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="612">
+                  <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -154,31 +98,140 @@
             <entry file="file://$PROJECT_DIR$/template/layout/body.phtml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="306">
-                  <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+                  <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="45" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Imprint.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Controller/Imprint.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Controller/Login.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="33" column="55" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="55" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Factory/Controller/Login.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="5" selection-start-column="5" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DetailsPage.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Controller/DetailsPage.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="AddComment.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Controller/AddComment.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="629">
+                  <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Application.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Application.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ControllerInterface.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/ControllerInterface.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Event.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Event.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="LoginValidate.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Service/LoginValidate.php">
+            <entry file="file://$PROJECT_DIR$/src/Factory/Controller/LoginValidate.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="28" selection-start-line="28" selection-end-line="41" selection-end-column="5" />
+                <state relative-caret-position="119">
+                  <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DetailsPage.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Factory/Controller/DetailsPage.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Config/config.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="595">
+                  <caret line="35" selection-start-line="35" selection-end-line="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LoginStatus.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/EventListener/LoginStatus.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
                   <folding>
-                    <element signature="e#28#57#0#PHP" expanded="true" />
+                    <element signature="e#35#62#0#PHP" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Entry.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Repository/Entry.php">
+          <file leaf-file-name="ViewModel.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/ViewModel.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="339">
-                  <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#31#53#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="544">
+                  <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Router.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -203,7 +256,10 @@
       <find>$_</find>
       <find>$_SESSION['userId']</find>
       <find>$_SESSION['validity']</find>
+      <find>header</find>
+      <find>valid</find>
       <find>$_SESSION</find>
+      <find>redirect</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\template</dir>
@@ -213,39 +269,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/Check24Framework/Exeption/WrongLoginData.php" />
-        <option value="$PROJECT_DIR$/lib/Check24Framework/DiContaier.php" />
-        <option value="$PROJECT_DIR$/src/Factory/FactoryInterface.php" />
-        <option value="$PROJECT_DIR$/src/Entity/EntryForHome.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Entry.php" />
-        <option value="$USER_HOME$/Desktop/README.md" />
-        <option value="$PROJECT_DIR$/lib/Check24Framework/DiContanier.php" />
-        <option value="$PROJECT_DIR$/lib/Check24Framework/FactoryInterface.php" />
-        <option value="$PROJECT_DIR$/lib/Check24Framework/Factory/Invokable.php" />
-        <option value="$PROJECT_DIR$/lib/Check24Framework/ControllerInterface.php" />
-        <option value="$PROJECT_DIR$/src/Factory/Controller.php" />
         <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/src/Factory/Comment.php" />
         <option value="$PROJECT_DIR$/src/Factory/Entry.php" />
         <option value="$PROJECT_DIR$/src/Factory/User.php" />
         <option value="$PROJECT_DIR$/src/Factory/Home.php" />
-        <option value="$PROJECT_DIR$/src/Controller/Home.php" />
-        <option value="$PROJECT_DIR$/src/Controller/DetailsPage.php" />
-        <option value="$PROJECT_DIR$/src/Controller/Imprint.php" />
         <option value="$PROJECT_DIR$/src/Login/CheckData.php" />
-        <option value="$PROJECT_DIR$/template/layout/body.phtml" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/src/Repository/Comment.php" />
-        <option value="$PROJECT_DIR$/src/Controller/AddComment.php" />
         <option value="$PROJECT_DIR$/src/AddEntry/InsertToDB.php" />
         <option value="$PROJECT_DIR$/src/Factory/Controller/InsertToDB.php" />
         <option value="$PROJECT_DIR$/template/home/welcome-page.phtml" />
         <option value="$PROJECT_DIR$/lib/Check24Framework/DiContainer.php" />
         <option value="$PROJECT_DIR$/lib/Check24Framework/Factory/Router.php" />
-        <option value="$PROJECT_DIR$/src/Controller/AddEntry.php" />
         <option value="$PROJECT_DIR$/src/Repository/Entry.php" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Factory/Controller/AddEntry.php" />
@@ -257,16 +299,33 @@
         <option value="$PROJECT_DIR$/src/Factory/Repository/Pdo.php" />
         <option value="$PROJECT_DIR$/src/Factory/Repository/User.php" />
         <option value="$PROJECT_DIR$/src/Factory/Pdo.php" />
-        <option value="$PROJECT_DIR$/src/Config/config.php" />
-        <option value="$PROJECT_DIR$/src/Factory/Controller/CheckData.php" />
         <option value="$PROJECT_DIR$/src/Factory/Controller/Login.php" />
-        <option value="$PROJECT_DIR$/src/Repository/User.php" />
-        <option value="$PROJECT_DIR$/src/Service/LoginValidate.php" />
         <option value="$PROJECT_DIR$/lib/Check24Framework/config.php" />
-        <option value="$PROJECT_DIR$/src/Controller/Login.php" />
-        <option value="$PROJECT_DIR$/lib/Check24Framework/Application.php" />
-        <option value="$PROJECT_DIR$/lib/Check24Framework/Redirect.php" />
         <option value="$PROJECT_DIR$/template/error/404.html" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/Redirect.php" />
+        <option value="$PROJECT_DIR$/src/Controller/DetailsPage.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Imprint.php" />
+        <option value="$PROJECT_DIR$/src/Repository/User.php" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/Exeption/WrongLoginData.php" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/Exeption/RouteNotFound.php" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/ViewModel.php" />
+        <option value="$PROJECT_DIR$/src/Service/LoginValidate.php" />
+        <option value="$PROJECT_DIR$/src/Factory/Controller/CheckData.php" />
+        <option value="$PROJECT_DIR$/src/Factory/Controller/LoginValidate.php" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/Router.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Home.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Login.php" />
+        <option value="$PROJECT_DIR$/template/layout/body.phtml" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/Controller.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AddComment.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AddEntry.php" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/AbstractController.php" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/EventListener.php" />
+        <option value="$PROJECT_DIR$/src/Config/config.php" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/Renderer.php" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/Event.php" />
+        <option value="$PROJECT_DIR$/src/EventListener/LoginStatus.php" />
+        <option value="$PROJECT_DIR$/lib/Check24Framework/Application.php" />
       </list>
     </option>
   </component>
@@ -281,8 +340,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2431" />
-    <option name="y" value="-122" />
+    <option name="x" value="2110" />
+    <option name="y" value="-127" />
     <option name="width" value="1934" />
     <option name="height" value="992" />
   </component>
@@ -334,20 +393,6 @@
             <path>
               <item name="Check24Blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Check24Blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Check24Framework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Exeption" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Check24Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Check24Blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Check24Framework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Factory" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Check24Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Check24Blog" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -377,7 +422,7 @@
               <item name="Check24Blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Check24Blog" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventListener" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Check24Blog" type="b2602c69:ProjectViewProjectNode" />
@@ -451,17 +496,17 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\lib\Check24Framework" />
+      <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\lib\Check24Framework\Factory" />
+      <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\public\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\src\Factory" />
       <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\src\Factory\Repository" />
       <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\src\Factory\Controller" />
       <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\lib\Check24Framework" />
       <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\src\config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\lib\Check24Framework" />
-      <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\lib\Check24Framework\Factory" />
-      <recent name="C:\Users\christian.meinhard\PhpstormProjects\Check24Blog\public\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -511,7 +556,11 @@
       <workItem from="1523859644592" duration="20627000" />
       <workItem from="1523947622391" duration="17578000" />
       <workItem from="1524032876094" duration="17596000" />
-      <workItem from="1524466124008" duration="5407000" />
+      <workItem from="1524466124008" duration="11722000" />
+      <workItem from="1524567987600" duration="5662000" />
+      <workItem from="1524637594287" duration="12323000" />
+      <workItem from="1525069875322" duration="10798000" />
+      <workItem from="1525677947965" duration="1011000" />
     </task>
     <task id="LOCAL-00001" summary="Oh Shit it works">
       <created>1523973009406</created>
@@ -524,7 +573,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337319000" />
+    <option name="totallyTimeSpent" value="373428000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,18 +586,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-118" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32906404" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32934132" />
+      <window_info anchor="bottom" id="Command Line Tools Console" weight="0.32906404" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.3280788" />
       <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33990148" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18656716" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.33990148" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23720682" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.32995737" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32906404" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
@@ -557,34 +605,35 @@
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32849163" />
       <window_info anchor="right" x="0" y="0" width="434" height="976" id="Documentation" order="4" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32906404" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3280788" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="7" />
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18443497" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19083156" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="2" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.32906404" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="11" visible="true" weight="0.32906404" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32906404" />
-      <window_info anchor="right" x="0" y="0" width="434" height="976" id="Documentation" order="0" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="1" weight="0.32995737" />
+      <window_info anchor="right" x="0" y="0" width="434" height="976" id="Documentation" order="4" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="0" weight="0.32995737" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.33990148" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32934132" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3280788" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32906404" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,39 +674,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Entity/EntryForDetailsPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/details-page/full-view.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/EntryCount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Factory/Controller.php" />
     <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Factory/Invokable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-end-line="19" />
-          <folding>
-            <element signature="e#134#167#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -675,19 +700,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AddEntry/InsertToDB.php" />
     <entry file="file://$PROJECT_DIR$/src/Factory/Controller/InsertToDB.php" />
     <entry file="file://$PROJECT_DIR$/src/Entity/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -698,24 +716,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Entry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="148" column="20" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/home/welcome-page.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="153" selection-start-line="9" selection-start-column="153" selection-end-line="9" selection-end-column="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Factory/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -744,33 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <element signature="e#27#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Exeption/WrongLoginData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factory/Repository/Entry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding>
-            <element signature="e#27#60#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,67 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="28" />
-          <folding>
-            <element signature="e#39#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factory/Controller/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding>
-            <element signature="e#42#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factory/Controller/CheckData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#134#167#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factory/Controller/AddComment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factory/Controller/DetailsPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding>
-            <element signature="e#42#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/ControllerInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/DiContainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/FactoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -856,112 +772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/ViewModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DetailsPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding>
-            <element signature="e#31#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Imprint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factory/Controller/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/Login/form.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="17" selection-start-line="8" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/LoginValidate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="e#28#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/Entry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="e#31#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AddEntry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-          <folding>
-            <element signature="e#31#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AddComment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-          <folding>
-            <element signature="e#31#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding>
-            <element signature="e#31#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/layout/body.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -972,41 +786,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Redirect.php">
+    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Factory/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Home.php">
+    <entry file="file://$PROJECT_DIR$/src/Repository/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#31#72#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Exeption/RouteNotFound.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Entry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory/Controller/AddComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Check24Framework/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state relative-caret-position="136">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Application.php">
+    <entry file="file://$PROJECT_DIR$/src/Service/LoginValidate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="221">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#28#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/Entry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="e#31#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/DiContainer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory/Repository/Entry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory/Controller/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/ViewModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AddComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DetailsPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory/Controller/DetailsPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory/Controller/LoginValidate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/ControllerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory/Controller/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AddEntry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Imprint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/layout/body.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/AbstractController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/FactoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Renderer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EventListener/LoginStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#35#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Check24Framework/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
         </state>
       </provider>
     </entry>

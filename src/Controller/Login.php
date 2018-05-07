@@ -3,8 +3,7 @@
 namespace Controller;
 
 
-use Check24Framework\ControllerInterface;
-use Check24Framework\Redirect;
+use Check24Framework\AbstractController;
 use Check24Framework\Request;
 use Check24Framework\ViewModel;
 use Service\LoginValidate;
@@ -13,7 +12,7 @@ use Service\LoginValidate;
  * Class Login
  * @package Controller
  */
-class Login implements ControllerInterface
+class Login extends AbstractController
 {
     private $checkData;
 
@@ -36,13 +35,15 @@ class Login implements ControllerInterface
             $_SESSION['validity'] = $idAndValidity['validity'];
             $_SESSION['userId'] = $idAndValidity['ID'];
             if ($_SESSION['validity']){
-                Redirect::to('/');
+                $this->redirectToRoute('/');
             }
             $errorMessage = 'Wrong Username or Password please try again!';
+            $_SESSION['validity'];
         }
         $viewModel = new ViewModel();
         $viewModel->setTemplate('../template/login/form.phtml');
         $viewModel->setTemplateVariables(['errorMessage' => !empty($errorMessage) ? $errorMessage :  ""]);
+        $viewModel->setLayoutVariables(['validity' => !empty($_SESSION['validity']) ? $_SESSION['validity'] :  false]);
         return $viewModel;
     }
 }

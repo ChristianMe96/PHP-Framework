@@ -2,8 +2,11 @@
 
 namespace Check24Framework\Exeption;
 
-
-class WrongLoginData extends \Exception
+/**
+ * Class WrongLoginData
+ * @package Check24Framework\Exeption
+ */
+class RouteNotFound extends \Exception
 {
 
 }

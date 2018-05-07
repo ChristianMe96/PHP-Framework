@@ -29,11 +29,11 @@ abstract class AbstractController implements ControllerInterface
         exit();
     }
 
-    public function redirectToPath($path)
+    public function redirectToRoute($route)
     {
-        if (array_key_exists($path, $this->routeConfig)) {
+        if (array_key_exists($route, $this->routeConfig)) {
             //ToDo Check if path exist in Config
-            header('Location: ' . $path, TRUE, 301);
+            header('Location: ' . $route, TRUE, 301);
             exit();
         }
     }

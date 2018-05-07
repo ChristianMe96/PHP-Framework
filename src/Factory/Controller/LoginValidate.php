@@ -7,7 +7,7 @@ use Check24Framework\DiContainer;
 use Check24Framework\FactoryInterface;
 use Repository\User;
 
-class CheckData implements FactoryInterface
+class LoginValidate implements FactoryInterface
 {
     public static function create(string $className, DiContainer $diContainer)
     {

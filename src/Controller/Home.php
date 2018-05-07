@@ -3,6 +3,7 @@
 namespace Controller;
 
 
+use Check24Framework\AbstractController;
 use Check24Framework\ControllerInterface;
 use Check24Framework\DiContainer;
 use Check24Framework\Request;
@@ -13,7 +14,7 @@ use Repository\Entry;
  * Class Home
  * @package Controller
  */
-class Home implements ControllerInterface
+class Home extends AbstractController
 {
     private $entryRepo;
 

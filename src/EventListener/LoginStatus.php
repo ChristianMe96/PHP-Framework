@@ -1,15 +1,22 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: christian.meinhard
- * Date: 30.04.2018
- * Time: 09:29
- */
+
 
 namespace EventListener;
 
 
-class LoginStatus
-{
+use Check24Framework\Event;
+use Check24Framework\ViewModel;
 
+class LoginStatus implements Event
+{
+    public function register(ViewModel $viewModel)
+    {
+        $viewModel->setLayoutVariables(['validity' => isset($_SESSION['validity']) ? $_SESSION['validity'] : null]);
+        return $viewModel;
+    }
+
+    public function execute()
+    {
+
+    }
 }

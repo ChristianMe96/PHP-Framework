@@ -21,7 +21,7 @@ class User
      * @param $username
      * @return mixed
      */
-    public function getUserWhereName($username): \Entity\User {
+    public function getUserWhereName($username) {
         $stmt = $this->pdo->prepare("SELECT * FROM users WHERE username = :username");
         $stmt->bindParam(':username', $username);
         $stmt->execute();
