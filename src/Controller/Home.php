@@ -40,7 +40,8 @@ class Home extends AbstractController
 
 
         if ($request->getFromQuery('Logout')) {
-            unset($_SESSION['validity']);
+            $_SESSION['validity'] = false;
+            $this->redirectTo('/');
         }
 
         if ($currentPage == ceil($rowCount->getEntryCount() / 3) - 1) {

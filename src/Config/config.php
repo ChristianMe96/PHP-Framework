@@ -22,6 +22,7 @@ return [
         \Controller\Imprint::class => \Check24Framework\Factory\Invokable::class,
         \Controller\Login::class => \Factory\Controller\Login::class,
         \Service\LoginValidate::class => \Factory\Controller\LoginValidate::class,
+        \EventListener\LoginStatus::class => \Check24Framework\Factory\Invokable::class
     ],
     'events' => [
         \Check24Framework\Event::PRERENDER => [

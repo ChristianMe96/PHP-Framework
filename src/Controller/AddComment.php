@@ -5,6 +5,7 @@ namespace Controller;
 
 use Check24Framework\AbstractController;
 use Check24Framework\Request;
+use Check24Framework\ViewModel;
 use Repository\Comment;
 
 /**
@@ -23,8 +24,9 @@ class AddComment extends AbstractController
 
     /**
      * @param Request $request
+     * @return ViewModel
      */
-    public function action(Request $request): void
+    public function action(Request $request)
     {
         $id = $request->getFromQuery('id');
 

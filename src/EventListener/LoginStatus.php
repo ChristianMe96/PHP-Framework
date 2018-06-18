@@ -5,18 +5,21 @@ namespace EventListener;
 
 
 use Check24Framework\Event;
+use Check24Framework\Session;
 use Check24Framework\ViewModel;
 
 class LoginStatus implements Event
 {
-    public function register(ViewModel $viewModel)
+    private $session;
+
+    public function register(Session $session)
     {
-        $viewModel->setLayoutVariables(['validity' => isset($_SESSION['validity']) ? $_SESSION['validity'] : null]);
-        return $viewModel;
+        $this->session = $session;
     }
 
-    public function execute()
+    public function execute(ViewModel $viewModel )
     {
-
+        $viewModel->setLayoutVariables(['validity' => $this->session->getSessionVariable('validity')]);
+        return $viewModel;
     }
 }

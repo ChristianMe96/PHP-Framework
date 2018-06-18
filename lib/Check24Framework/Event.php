@@ -8,7 +8,7 @@ interface Event
     const PRERENDER = 'prerender';
     const POSTRENDER = 'postrender';
 
-    public function register(ViewModel $viewModel);
+    public function register(Session $session);
 
-    public function execute();
+    public function execute(ViewModel $viewModel);
 }

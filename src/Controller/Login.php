@@ -43,7 +43,6 @@ class Login extends AbstractController
         $viewModel = new ViewModel();
         $viewModel->setTemplate('../template/login/form.phtml');
         $viewModel->setTemplateVariables(['errorMessage' => !empty($errorMessage) ? $errorMessage :  ""]);
-        $viewModel->setLayoutVariables(['validity' => !empty($_SESSION['validity']) ? $_SESSION['validity'] :  false]);
         return $viewModel;
     }
 }
