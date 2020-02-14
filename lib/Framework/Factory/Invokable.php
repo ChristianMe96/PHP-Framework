@@ -6,12 +6,12 @@
  * Time: 10:48
  */
 
-namespace Check24Framework\Factory;
+namespace Framework\Factory;
 
 
 
-use Check24Framework\DiContainer;
-use Check24Framework\FactoryInterface;
+use Framework\DiContainer;
+use Framework\FactoryInterface;
 
 class Invokable implements FactoryInterface
 {

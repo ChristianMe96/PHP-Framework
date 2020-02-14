@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24Framework;
+namespace Framework;
 
 
 abstract class AbstractController implements ControllerInterface

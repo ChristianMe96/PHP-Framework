@@ -2,8 +2,8 @@
 
 return [
     'factories' => [
-        \Check24Framework\Renderer::class => \Check24Framework\Factory\Invokable::class,
-        \Check24Framework\Router::class => \Check24Framework\Factory\Invokable::class,
-        \Check24Framework\AbstractController::class => \Check24Framework\Factory\Invokable::class
+        \Framework\Renderer::class => \Framework\Factory\Invokable::class,
+        \Framework\Router::class => \Framework\Factory\Invokable::class,
+        \Framework\AbstractController::class => \Framework\Factory\Invokable::class
     ]
 ];

@@ -1,18 +1,18 @@
 <?php
 
-namespace Check24Framework;
+namespace Framework;
 
 
-use Check24Framework\Exeption\RouteNotFound;
+use Framework\Exeption\RouteNotFound;
 
 class Router
 {
     public function route(array $routes, array $server): string
     {
         $requestUri = $server['REQUEST_URI'];
-        $requestQuery = $server['QUERY_STRING'];
 
-        if (!empty($requestQuery)) {
+        if (array_key_exists('QUERY_STRING', $server)) {
+            $requestQuery = $server['QUERY_STRING'];
             $requestUri = substr($requestUri, 0, strpos($requestUri, $requestQuery)-1);
         }
 

@@ -4,9 +4,9 @@
 namespace EventListener;
 
 
-use Check24Framework\Event;
-use Check24Framework\Session;
-use Check24Framework\ViewModel;
+use Framework\Event;
+use Framework\Session;
+use Framework\ViewModel;
 
 class LoginStatus implements Event
 {

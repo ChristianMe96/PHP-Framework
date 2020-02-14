@@ -3,7 +3,7 @@
 namespace Service;
 
 
-use Check24Framework\Request;
+use Framework\Request;
 use Repository\User;
 
 

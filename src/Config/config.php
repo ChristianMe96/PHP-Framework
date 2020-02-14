@@ -19,16 +19,16 @@ return [
         \Controller\AddEntry::class => \Factory\Controller\AddEntry::class,
         \Controller\DetailsPage::class => \Factory\Controller\DetailsPage::class,
         \Controller\Home::class => \Factory\Controller\Home::class,
-        \Controller\Imprint::class => \Check24Framework\Factory\Invokable::class,
+        \Controller\Imprint::class => \Framework\Factory\Invokable::class,
         \Controller\Login::class => \Factory\Controller\Login::class,
         \Service\LoginValidate::class => \Factory\Controller\LoginValidate::class,
-        \EventListener\LoginStatus::class => \Check24Framework\Factory\Invokable::class
+        \EventListener\LoginStatus::class => \Framework\Factory\Invokable::class
     ],
     'events' => [
-        \Check24Framework\Event::PRERENDER => [
+        \Framework\Event::PRERENDER => [
             \EventListener\LoginStatus::class
         ],
-        \Check24Framework\Event::POSTRENDER => [
+        \Framework\Event::POSTRENDER => [
 
         ]
 

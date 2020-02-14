@@ -3,11 +3,11 @@
 namespace Controller;
 
 
-use Check24Framework\AbstractController;
-use Check24Framework\ControllerInterface;
-use Check24Framework\DiContainer;
-use Check24Framework\Request;
-use Check24Framework\ViewModel;
+use Framework\AbstractController;
+use Framework\ControllerInterface;
+use Framework\DiContainer;
+use Framework\Request;
+use Framework\ViewModel;
 use Repository\Entry;
 
 /**

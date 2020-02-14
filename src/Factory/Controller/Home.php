@@ -3,8 +3,8 @@
 namespace Factory\Controller;
 
 
-use Check24Framework\DiContainer;
-use Check24Framework\FactoryInterface;
+use Framework\DiContainer;
+use Framework\FactoryInterface;
 use Repository\Entry;
 
 class Home implements FactoryInterface

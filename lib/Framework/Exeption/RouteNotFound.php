@@ -1,10 +1,10 @@
 <?php
 
-namespace Check24Framework\Exeption;
+namespace Framework\Exeption;
 
 /**
  * Class WrongLoginData
- * @package Check24Framework\Exeption
+ * @package Framework\Exeption
  */
 class RouteNotFound extends \Exception
 {

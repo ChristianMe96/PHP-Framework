@@ -6,11 +6,11 @@
  * Time: 11:49
  */
 
-namespace Check24Framework;
+namespace Framework;
 
 /**
  * Class Session
- * @package Check24Framework
+ * @package Framework
  */
 class Session
 {

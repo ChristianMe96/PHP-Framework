@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24Framework;
+namespace Framework;
 
-use Check24Framework\Exeption\RouteNotFound;
+use Framework\Exeption\RouteNotFound;
 use EventListener\LoginStatus;
 
 class Application
@@ -18,11 +18,10 @@ class Application
         //todo: register all events
         $this->events = $config['events'];
         //Register Prerender Events
-        foreach ($this->events[Event::PRERENDER] as $preEventReg){
+        foreach ($this->events[Event::PRERENDER] as $preEventReg) {
             $event = $diContainer->get($preEventReg);
             $event->register($session);
         }
-
 
 
         $request = new Request($_GET, $_POST, $_FILES);
@@ -34,7 +33,7 @@ class Application
             $controllerClass = $router->route($mergedConfig, $_SERVER);
         } catch (RouteNotFound $e) {
             header('HTTP/1.0 404 Not Found');
-            include('../template/error/404.html');
+            include('../../template/error/404.html');
             exit();
         }
 
@@ -43,7 +42,7 @@ class Application
         $controller->setRouteConfig($config['routes']);
         $viewModel = $controller->action($request);
         //Execute Prerender Events
-        foreach ($this->events[Event::PRERENDER] as $preEventExe){
+        foreach ($this->events[Event::PRERENDER] as $preEventExe) {
             $event = $diContainer->get($preEventExe);
             $event->execute($viewModel);
         }
