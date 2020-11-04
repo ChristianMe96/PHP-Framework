@@ -18,6 +18,6 @@ class Pdo implements FactoryInterface
      */
     public static function create(string $className, DiContainer $diContainer): \PDO
     {
-        return new $className('mysql:host=localhost;dbname=blog', 'root', '');
+        return new $className('mysql:host=localhost;dbname=php_framework', 'root', '');
     }
 }

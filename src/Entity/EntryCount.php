@@ -11,7 +11,7 @@ namespace Entity;
 
 class EntryCount
 {
-    private $entryCount = 0;
+    private int $entryCount = 0;
 
     /**
      * @return int

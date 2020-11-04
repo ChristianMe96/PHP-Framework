@@ -6,7 +6,7 @@ namespace Controller;
 use Framework\AbstractController;
 use Framework\Request;
 use Framework\ViewModel;
-use Repository\Entry;
+use Repository\EntryRepository;
 
 
 /**
@@ -17,7 +17,7 @@ class DetailsPage extends AbstractController
 {
     private $entryRepo;
 
-    public function __construct(Entry $entryRepo)
+    public function __construct(EntryRepository $entryRepo)
     {
         $this->entryRepo = $entryRepo;
     }

@@ -7,7 +7,7 @@ use Framework\AbstractController;
 use Framework\ControllerInterface;
 use Framework\Request;
 use Framework\ViewModel;
-use Repository\Entry;
+use Repository\EntryRepository;
 
 
 /**
@@ -17,11 +17,11 @@ use Repository\Entry;
 class AddEntry extends AbstractController
 {
     /**
-     * @var Entry
+     * @var EntryRepository
      */
     private $entryRepo;
 
-    public function __construct(Entry $entryRepo)
+    public function __construct(EntryRepository $entryRepo)
     {
         $this->entryRepo = $entryRepo;
     }

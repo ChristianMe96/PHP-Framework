@@ -1,31 +1,26 @@
 <?php
 namespace Repository;
 
+use PDO;
+
 /**
  * Class User
  * @package Repository
  */
 class User
 {
-    /**
-     * @var
-     */
-    private $pdo;
+    private PDO $pdo;
 
-    public function __construct($pdo)
+    public function __construct(PDO $pdo)
     {
         $this->pdo = $pdo;
     }
 
-    /**
-     * @param $username
-     * @return mixed
-     */
-    public function getUserWhereName($username) {
-        $stmt = $this->pdo->prepare("SELECT * FROM users WHERE username = :username");
+    public function getUserWhereName(string $username) {
+        $stmt = $this->pdo->prepare('SELECT * FROM users WHERE username = :username');
         $stmt->bindParam(':username', $username);
         $stmt->execute();
-        $userWhereName = $stmt->fetchObject(\Entity\User::class);
-        return $userWhereName;
+
+        return $stmt->fetchObject(\Entity\User::class);
     }
 }

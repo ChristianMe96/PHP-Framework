@@ -14,9 +14,9 @@ class Entry implements FactoryInterface
     /**
      * @param string $className
      * @param DiContainer $diContainer
-     * @return \Repository\Entry
+     * @return \Repository\EntryRepository
      */
-    public static function create(string $className, DiContainer $diContainer): \Repository\Entry
+    public static function create(string $className, DiContainer $diContainer): \Repository\EntryRepository
     {
        return new $className($diContainer->get(\PDO::class));
     }

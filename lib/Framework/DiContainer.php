@@ -14,11 +14,7 @@ class DiContainer
 
     public function get($className)
     {
-        if(isset($this->instances[$className])) {
-            return $this->instances[$className];
-        } else {
-            return $this->createInstance($className);
-        }
+        return $this->instances[$className] ?? $this->createInstance($className);
     }
 
     private function createInstance($className) {

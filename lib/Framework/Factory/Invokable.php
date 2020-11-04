@@ -15,7 +15,8 @@ use Framework\FactoryInterface;
 
 class Invokable implements FactoryInterface
 {
-    public static function create(string $className, DiContainer $diContainer) {
+    public static function create(string $className, DiContainer $diContainer)
+    {
         return new $className();
     }
 }

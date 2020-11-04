@@ -13,7 +13,7 @@ return [
     'factories' => [
         \Repository\Comment::class => \Factory\Repository\Comment::class,
         \Repository\User::class => \Factory\Repository\User::class,
-        \Repository\Entry::class => \Factory\Repository\Entry::class,
+        \Repository\EntryRepository::class => \Factory\Repository\Entry::class,
         \PDO::class => \Factory\Pdo::class,
         \Controller\AddComment::class => \Factory\Controller\AddComment::class,
         \Controller\AddEntry::class => \Factory\Controller\AddEntry::class,

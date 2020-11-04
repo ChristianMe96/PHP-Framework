@@ -8,7 +8,7 @@ use Framework\ControllerInterface;
 use Framework\DiContainer;
 use Framework\Request;
 use Framework\ViewModel;
-use Repository\Entry;
+use Repository\EntryRepository;
 
 /**
  * Class Home
@@ -18,7 +18,7 @@ class Home extends AbstractController
 {
     private $entryRepo;
 
-    public function __construct(Entry $entryRepo)
+    public function __construct(EntryRepository $entryRepo)
     {
         $this->entryRepo = $entryRepo;
     }
@@ -44,7 +44,7 @@ class Home extends AbstractController
             $this->redirectTo('/');
         }
 
-        if ($currentPage == ceil($rowCount->getEntryCount() / 3) - 1) {
+        if ($rowCount !== null && ceil($rowCount->getEntryCount() / 3) - 1) {
             $lastPage = true;
         }
 

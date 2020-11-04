@@ -5,31 +5,25 @@ namespace Framework;
 
 abstract class AbstractController implements ControllerInterface
 {
-    private $routeConfig = [];
+    private array $routeConfig = [];
 
-    /**
-     * @return array
-     */
     public function getRouteConfig(): array
     {
         return $this->routeConfig;
     }
 
-    /**
-     * @param array $routeConfig
-     */
     public function setRouteConfig(array $routeConfig): void
     {
         $this->routeConfig = $routeConfig;
     }
 
-    public function redirectTo($location)
+    public function redirectTo($location): void
     {
         header('Location: ' . $location, TRUE, 301);
         exit();
     }
 
-    public function redirectToRoute($route)
+    public function redirectToRoute($route): void
     {
         if (array_key_exists($route, $this->routeConfig)) {
             //ToDo Check if path exist in Config
